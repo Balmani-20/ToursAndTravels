@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+  <link href="vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
+    <div class="container">
+      <a class="navbar-brand" href="home.html"><img src="img/Logo.png" class="w-100"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse  justify-content-md-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Services.html"> Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Destination.html"> Destination</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="Destination.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Page
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="places.html">Places</a></li>
+              <li><a class="dropdown-item" href="Booking.html">Booking</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html"> Contact</a>
+          </li>
+          <a href="Registration.html" class="a"><button class="reg-but">Register</button></a>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url(img/slider1\ \(1\).jpg)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Sailor</span></h2>
+              <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea
+                ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem.
+                Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url(img/slider1\ \(2\).jpg)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>
+              <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea
+                ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem.
+                Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url(img/slide-2.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
+              <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea
+                ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem.
+                Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+  </section><!-- End Hero -->
+
+
+  <div class="main-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h3>Where you want to go?</h3>
+        </div>
+        <div class="col-md-9">
+          <div class="section_wrap">
+            <form class="section_form">
+              <div class="input_field">
+                <div class="row">
+                  <div class="col-md-3">
+                    <input type="text" placeholder="Where to go?">
+                  </div>
+
+                  <div class="col-md-3 ">
+                    <input type="date" placeholder="date">
+                  </div>
+                  <div class="col-md-3 ">
+                    <select id="Travel Type">
+                      <option value="Some option">Some option</option>
+                      <option value="Another option">Another option</option>
+
+                    </select>
+                  </div>
+                  <div class="col-md-3 ">
+                    <div class="search_btn">
+                      <button class="boxed-btn4 " type="submit">Search</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- About Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+          <div class="position-relative h-100">
+            <img class="img-fluid position-absolute w-100 h-100" src="img/download (1).jpg" alt=""
+              style="object-fit: cover;">
+          </div>
+        </div>
+        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+          <h6 class="section-title bg-white text-start title-color pe-3">About Us</h6>
+          <h1 class="mb-4">Welcome to <span class="title-color">Tourist</span></h1>
+          <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.
+            Clita erat ipsum et lorem et sit.</p>
+          <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.
+            Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+          <div class="row gy-2 gx-4 mb-4">
+            <div class="col-sm-6">
+              <p class="mb-0"><i class="fa fa-arrow-right title-color me-2"></i>First Class Flights</p>
+            </div>
+            <div class="col-sm-6">
+              <p class="mb-0"><i class="fa fa-arrow-right title-color me-2"></i>Handpicked Hotels</p>
+            </div>
+            <div class="col-sm-6">
+              <p class="mb-0"><i class="fa fa-arrow-right title-color me-2"></i>5 Star Accommodations</p>
+            </div>
+            <div class="col-sm-6">
+              <p class="mb-0"><i class="fa fa-arrow-right title-color me-2"></i>Latest Model Vehicles</p>
+            </div>
+            <div class="col-sm-6">
+              <p class="mb-0"><i class="fa fa-arrow-right title-color me-2"></i>150 Premium City Tours</p>
+            </div>
+            <div class="col-sm-6">
+              <p class="mb-0"><i class="fa fa-arrow-right title-color me-2"></i>24/7 Service</p>
+            </div>
+          </div>
+          <a class="btn back-color py-2 px-3 mt-2" href="">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- About End -->
+
+  <!-- ======= Services Section ======= -->
+  <section id="services" class="services mt-2">
+    <div class="container">
+      <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+        <h6 class="section-title bg-white text-center title-color px-3">Services</h6>
+        <h1 class="mb-5">Our Services</h1>
+      </div>
+      <!-- <div class="section-title">
+      <h2>Services</h2>
+      <h3>We do offer awesome <span>Services</span></h3>
+      <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+    </div> -->
+
+      <div class="row">
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bxl-dribbble"></i></div>
+            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-file"></i></div>
+            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-tachometer"></i></div>
+            <h4 class="title"><a href="">Magni Dolores</a></h4>
+            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-world"></i></div>
+            <h4 class="title"><a href="">Nemo Enim</a></h4>
+            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Services Section -->
+
+<!-- Popular places start -->
+
+  <div class="popular_destination_area ">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 mt-5">
+          <!-- <div class="section_title text-center">
+    <h3>Popular Destination</h3>
+    <p>Suffered alteration in some form, by injected humour or good day randomised booth anim 8-bit hella wolf moon beard words.</p>
+    </div> -->
+          <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="section-title bg-white text-center title-color px-3">Places</h6>
+            <h1 class="mb-5">Popular Places</h1>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-lg-4 col-md-6">
+          <div class="single_destination">
+            <div class="thumb">
+              <img src="img/1.png.webp" alt="">
+            </div>
+            <div class="content">
+              <p class="d-flex align-items-center">Italy <a href="travel_destination.html"> 07 Places</a> </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="single_destination">
+            <div class="thumb">
+              <img src="img/2.png.webp" alt="">
+            </div>
+            <div class="content">
+              <p class="d-flex align-items-center">Brazil <a href="travel_destination.html"> 03 Places</a> </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="single_destination">
+            <div class="thumb">
+              <img src="img/3.png.webp" alt="">
+            </div>
+            <div class="content">
+              <p class="d-flex align-items-center">America <a href="travel_destination.html"> 10 Places</a> </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="single_destination">
+            <div class="thumb">
+              <img src="img/4.png.webp" alt="">
+            </div>
+            <div class="content">
+              <p class="d-flex align-items-center">Nepal <a href="travel_destination.html"> 02 Places</a> </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="single_destination">
+            <div class="thumb">
+              <img src="img/5.png.webp" alt="">
+            </div>
+            <div class="content">
+              <p class="d-flex align-items-center">Maldives <a href="travel_destination.html"> 02 Places</a> </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="single_destination">
+            <div class="thumb">
+              <img src="img/6.png.webp" alt="">
+            </div>
+            <div class="content">
+              <p class="d-flex align-items-center">Indonesia <a href="travel_destination.html"> 05 Places</a> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- popular places end -->
+
+  <!-- Destination Start -->
+  <div class="container-xxl py-5 destination">
+    <div class="container">
+      <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+        <h6 class="section-title bg-white text-center title-color px-3">Destination</h6>
+        <h1 class="mb-5">Popular Destination</h1>
+      </div>
+      <div class="row g-3">
+        <div class="col-lg-7 col-md-6">
+          <div class="row g-3">
+            <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+              <a class="position-relative d-block overflow-hidden" href="">
+                <img class="img-fluid" src="img/banner3.png.webp" alt="">
+                <div class="bg-white title-color fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">30% OFF</div>
+                <div class="bg-white title-color1 fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Thailand</div>
+              </a>
+            </div>
+            <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
+              <a class="position-relative d-block overflow-hidden" href="">
+                <img class="img-fluid" src="img/1.png.webp" alt="">
+                <div class="bg-white title-color fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">25% OFF</div>
+                <div class="bg-white title-color1 fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Malaysia</div>
+              </a>
+            </div>
+            <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
+              <a class="position-relative d-block overflow-hidden" href="">
+                <img class="img-fluid" src="img/2.png.webp" alt="">
+                <div class="bg-white title-color fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">35% OFF</div>
+                <div class="bg-white title-color1 fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Australia
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
+          <a class="position-relative d-block h-100 overflow-hidden" href="">
+            <img class="img-fluid position-absolute w-100 h-100" src="img/6.png.webp" alt="" style="object-fit: cover;">
+            <div class="bg-white title-color fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">20% OFF</div>
+            <div class="bg-white title-color1 fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Indonesia</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Destination Start -->
+  <!-- Package Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+        <h6 class="section-title bg-white text-center title-color px-3">Packages</h6>
+        <h1 class="mb-5">Awesome Packages</h1>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="package-item">
+            <div class="overflow-hidden">
+              <img class="img-fluid" src="img/1.png.webp" alt="">
+            </div>
+            <div class="d-flex border-bottom">
+              <small class="flex-fill text-center border-end py-2"><i
+                  class="fa fa-map-marker title-color me-2"></i>Thailand</small>
+              <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar title-color me-2"></i>3
+                days</small>
+              <small class="flex-fill text-center py-2"><i class="fa fa-user title-color me-2"></i>2 Person</small>
+            </div>
+            <div class="text-center p-4">
+              <h3 class="mb-0">$149.00</h3>
+              <div class="mb-3">
+                <small class="fa fa-star title-color"></small>
+                <small class="fa fa-star title-color"></small>
+                <small class="fa fa-star title-color"></small>
+                <small class="fa fa-star title-color"></small>
+                <small class="fa fa-star title-color"></small>
+              </div>
+              <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam eos</p>
+              <div class="d-flex justify-content-center mb-2">
+                <a href="#" class="btn btn-sm back-color px-3 border-end" style="border-radius: 30px 0 0 30px;">Read
+                  More</a>
+                <a href="#" class="btn btn-sm back-color px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="package-item">
+            <div class="overflow-hidden">
+              <img class="img-fluid" src="img/2.png.webp" alt="">
+            </div>
+            <div class="d-flex border-bottom">
+              <small class="flex-fill text-center border-end py-2"><i
+                  class="fa fa-map-marker title-color me-2"></i>Indonesia</small>
+              <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar title-color me-2"></i>3
+                days</small>
+              <small class="flex-fill text-center py-2"><i class="fa fa-user title-color me-2"></i>2 Person</small>
+            </div>
+            <div class="text-center p-4">
+              <h3 class="mb-0">$139.00</h3>
+              <div class="mb-3">
+                <small class="fa fa-star title-color"></small>
+                <small class="fa fa-star title-color"></small>
+                <small class="fa fa-star title-color"></small>
+                <small class="fa fa-star title-color"></small>
+                <small class="fa fa-star title-color"></small>
+              </div>
+              <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam eos</p>
+              <div class="d-flex justify-content-center mb-2">
+                <a href="#" class="btn btn-sm back-color px-3 border-end" style="border-radius: 30px 0 0 30px;">Read
+                  More</a>
+                <a href="#" class="btn btn-sm back-color px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="package-item">
+            <div class="overflow-hidden">
+              <img class="img-fluid" src="img/3.png.webp" alt="">
+            </div>
+            <div class="d-flex border-bottom">
+              <small class="flex-fill text-center border-end py-2"><i
+                  class="fa fa-map-marker title-color me-2"></i>Malaysia</small>
+              <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar title-color me-2"></i>3
+                days</small>
+              <small class="flex-fill text-center py-2"><i class="fa fa-user title-color me-2"></i>2 Person</small>
+            </div>
+            <div class="text-center p-4">
+              <h3 class="mb-0">$189.00</h3>
+              <div class="mb-3">
+                <small class="fa fa-star title-color"></small>
+                <small class="fa fa-star title-color"></small>
+                <small class="fa fa-star title-color"></small>
+                <small class="fa fa-star title-color"></small>
+                <small class="fa fa-star title-color"></small>
+              </div>
+              <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam eos</p>
+              <div class="d-flex justify-content-center mb-2">
+                <a href="#" class="btn btn-sm back-color px-3 border-end" style="border-radius: 30px 0 0 30px;">Read
+                  More</a>
+                <a href="#" class="btn btn-sm back-color px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Package End -->
+  <!-- ======= Testimonials Section ======= -->
+  <section id="testimonials" class="testimonials section-bg">
+    <div class="container">
+
+      <!-- <div class="section-title" data-aos="fade-up">
+      <h2>Testimonials</h2>
+      <p>Magnam dolores commodi suscipit eum quidem consectetur velit</p>
+    </div> -->
+      <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+        <h6 class="section-title bg-white text-center title-color px-3">Testimonials</h6>
+        <h1 class="mb-5">customer review </h1>
+      </div>
+
+      <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="testimonial-wrap">
+              <div class="testimonial-item">
+                <img src="img/5.png.webp" class="testimonial-img" alt="">
+                <h3>Saul Goodman</h3>
+                <h4>Ceo &amp; Founder</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium
+                  quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-wrap">
+              <div class="testimonial-item">
+                <img src="img/4.png.webp" class="testimonial-img" alt="">
+                <h3>Sara Wilsson</h3>
+                <h4>Designer</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
+                  quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-wrap">
+              <div class="testimonial-item">
+                <img src="img/3.png.webp" class="testimonial-img" alt="">
+                <h3>Jena Karlis</h3>
+                <h4>Store Owner</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim
+                  tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-wrap">
+              <div class="testimonial-item">
+                <img src="img/1.png.webp" class="testimonial-img" alt="">
+                <h3>Matt Brandon</h3>
+                <h4>Freelancer</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit
+                  minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-wrap">
+              <div class="testimonial-item">
+                <img src="img/2.png.webp" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa
+                  labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+          </div><!-- End testimonial item -->
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+  </section><!-- End Testimonials Section -->
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3><img src="img/Logo.png" class="w-100"></h3>
+            <p>
+              9/4, Shri Markendaya Yantramag<br> Dharak Society, Near New WIT <br>College, Next to Upahar Bakery <br>
+              lane, Solapur - 413006. <br><br>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copy right All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/presento-bootstrap-corporate-template/ -->
+          Designed by <a href="https://www.vertextechnosys.com/"> Vertex Technosys</a>
+        </div>
+      </div>
+      <div class="social-links text-center text-md-end pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+  <!--       
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script> -->
+
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="vendor/php-email-form/validate.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
